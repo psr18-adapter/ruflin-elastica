@@ -1,0 +1,25 @@
+{
+  "name": "psr18-adapter/ruflin-elastica",
+  "keywords": [
+    "ruflin",
+    "elastica",
+    "psr-18"
+  ],
+  "homepage": "https://github.com/psr18-adapter/ruflin-elastica",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0",
+    "ruflin/elastica": ">=2.0.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Psr18Adapter\\Ruflin\\Elastica\\": "src/"
+    }
+  }
+}
