@@ -105,7 +105,7 @@ class RuflinPsr18Transport extends AbstractTransport
             $action = '/'.ltrim($action, '/');
         }
 
-        $uri = $this->uriFactory->createUri($url.$action);
+        $uri = $this->uriFactory->createUri(rtrim($url).$action);
 
         if ($query = $request->getQuery()) {
             return $uri->withQuery(http_build_query($query));
