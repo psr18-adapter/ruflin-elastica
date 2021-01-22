@@ -10,7 +10,7 @@ composer require psr18-adapter/ruflin-elastica
 
 ## Usage
 
-This would be how a service configuration would like when using symfony/dependency-injection:
+This would be how a service configuration would look like when using symfony/dependency-injection:
  
 ```yml
 services:
