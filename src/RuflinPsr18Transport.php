@@ -98,7 +98,7 @@ class RuflinPsr18Transport extends AbstractTransport
         $connection = $request->getConnection();
         $url = $connection->hasConfig('url')
             ? $connection->getConfig('url')
-            : "http://{$connection->getHost()}:{$connection->getPort()}/{$connection->getPath()}"
+            : rtrim("http://{$connection->getHost()}:{$connection->getPort()}/{$connection->getPath()}", '/')
         ;
 
         if ($action = $request->getPath()) {
